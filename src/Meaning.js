@@ -4,7 +4,6 @@ import Examples from "./Examples.js";
 import Antonyms from "./Antonyms.js";
 
 export default function Meaning(props) {
-  console.log(props.results);
   return (
     <div className="Meaning">
       <section>

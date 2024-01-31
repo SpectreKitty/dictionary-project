@@ -7,7 +7,6 @@ export default function Examples(props) {
         <p>
           <strong>Example: </strong>
           <em>{props.example}</em>
-          {props.phonetic}
         </p>
       </div>
     );
