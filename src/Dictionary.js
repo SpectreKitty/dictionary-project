@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import Results from "./Results.js";
+import Results from "./Results";
 import axios from "axios";
 import "./Dictionary.css";
-import Photos from "./Photos.js";
+import Photos from "./Photos";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
-  let [photos, setPhotos] = useState(props.defaultKeyword);
+  let [photos, setPhotos] = useState(null);
 
   function handleResponse(response) {
     setResults(response.data);
